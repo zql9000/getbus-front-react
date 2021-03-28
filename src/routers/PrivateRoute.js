@@ -1,7 +1,6 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Navbar } from '../components/ui/Navbar';
 
 export const PrivateRoute = ({
   isAuthenticated,
@@ -14,14 +13,7 @@ export const PrivateRoute = ({
     <Route
       {...rest}
       component={(props) =>
-        isAuthenticated ? (
-          <>
-            <Navbar />
-            <Component {...props} />
-          </>
-        ) : (
-          <Redirect to="/login" />
-        )
+        isAuthenticated ? <Component {...props} /> : <Redirect to="/login" />
       }
     />
   );

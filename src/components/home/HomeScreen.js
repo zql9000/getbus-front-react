@@ -1,5 +1,12 @@
 import React from 'react';
 
 export const HomeScreen = () => {
-  return <h1>HomeScreen works!</h1>;
+  return (
+    <>
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">HomeScreen title works!</h1>
+      </div>
+      HomeScreen content works!
+    </>
+  );
 };

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 import { startChecking } from '../actions/authActions';
 import { LoginScreen } from '../components/auth/LoginScreen';
-import { HomeScreen } from '../components/home/HomeScreen';
+import { GetBusRoutes } from './GetBusRoutes';
 import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
 
@@ -34,7 +34,7 @@ export const AppRouter = () => {
           <PrivateRoute
             exact
             path="/"
-            component={HomeScreen}
+            component={GetBusRoutes}
             isAuthenticated={!!userId}
           />
           <Redirect to="/" />
