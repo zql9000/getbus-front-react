@@ -1,0 +1,16 @@
+.navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.navbar-center {
+  align-self: center;
+}
+
+.navbar-end {
+  display: inline-flex;
+}
+
+.user-detail {
+  color: rgba(255, 255, 255, 0.55);
+}
