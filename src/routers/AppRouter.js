@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { startChecking } from '../actions/authActions';
 import { LoginScreen } from '../components/auth/LoginScreen';
 import { GetBusRoutes } from './GetBusRoutes';
@@ -32,12 +32,10 @@ export const AppRouter = () => {
             isAuthenticated={!!userId}
           />
           <PrivateRoute
-            exact
             path="/"
             component={GetBusRoutes}
             isAuthenticated={!!userId}
           />
-          <Redirect to="/" />
         </Switch>
       </div>
     </Router>

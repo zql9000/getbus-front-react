@@ -27,7 +27,7 @@ export const Navbar = () => {
         <ul className="navbar-nav px-3 navbar-center">
           <li className="nav-item text-nowrap">
             <span className="nav-link pointer" onClick={handleLogout}>
-              <i class="fas fa-sign-out-alt"></i>
+              <i className="fas fa-sign-out-alt"></i>
             </span>
           </li>
         </ul>
