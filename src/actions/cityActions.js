@@ -73,7 +73,7 @@ export const cityStartDelete = (id) => {
     if (body.ok) {
       dispatch(cityDelete(body.city));
       dispatch(closeModal());
-      Swal.fire('Eliminar Provincia', 'La provincia fue eliminada', 'success');
+      Swal.fire('Eliminar Ciudad', 'La ciudad fue eliminada', 'success');
     } else {
       Swal.fire('Error', getError(body), 'error');
     }

@@ -9,6 +9,9 @@ export const translateHeaderToSpanish = (text) => {
     case 'provinceName':
       return 'Provincia';
 
+    case 'cityName':
+      return 'Ciudad';
+
     default:
       return text;
   }

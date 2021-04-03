@@ -26,4 +26,10 @@ export const types = {
   cityAddNew: '[city] Add new',
   cityModify: '[city] Modify',
   cityDelete: '[city] Delete',
+
+  busStationStartList: '[busStation] Start list all',
+  busStationListAll: '[busStation] List all',
+  busStationAddNew: '[busStation] Add new',
+  busStationModify: '[busStation] Modify',
+  busStationDelete: '[busStation] Delete',
 };
