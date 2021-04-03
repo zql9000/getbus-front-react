@@ -38,13 +38,13 @@ export const BusStationsScreen = () => {
   const handleDelete = (data) => {
     Swal.fire({
       title: 'Eliminar Terminal',
-      html: `Está seguro de eliminar la terminal ${data.name}?`,
-      showDenyButton: true,
+      html: `¿Está seguro de eliminar la terminal ${data.name}?`,
+      showCancelButton: true,
       confirmButtonText: 'Sí',
-      denyButtonText: 'No',
+      cancelButtonText: 'No',
       customClass: {
-        confirmButton: 'order-2',
-        denyButton: 'order-3',
+        confirmButton: 'order-1',
+        cancelButton: 'order-2',
       },
     }).then((result) => {
       if (result.isConfirmed) {
