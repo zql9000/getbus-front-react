@@ -20,4 +20,10 @@ export const types = {
   documentTypeAddNew: '[documentType] Add new',
   documentTypeModify: '[documentType] Modify',
   documentTypeDelete: '[documentType] Delete',
+
+  cityStartList: '[city] Start list all',
+  cityListAll: '[city] List all',
+  cityAddNew: '[city] Add new',
+  cityModify: '[city] Modify',
+  cityDelete: '[city] Delete',
 };

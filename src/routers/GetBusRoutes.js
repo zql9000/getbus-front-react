@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
+import { CitiesScreen } from '../components/cities/CitiesScreen';
 import { DocumentTypesScreen } from '../components/documentTypes/DocumentTypesScreen';
 import { HomeScreen } from '../components/home/HomeScreen';
 import { ProvincesScreen } from '../components/provinces/ProvincesScreen';
@@ -21,6 +22,7 @@ export const GetBusRoutes = () => {
                 path="/tipos-documento"
                 component={DocumentTypesScreen}
               />
+              <Route exact path="/ciudades" component={CitiesScreen} />
               <Route path="/" component={HomeScreen} />
             </Switch>
           </main>
