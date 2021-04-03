@@ -6,19 +6,19 @@ import {
   openModalView,
 } from '../../actions/uiActions';
 import {
-  provinceStartDelete,
-  provinceStartList,
-} from '../../actions/provinceActions';
+  documentTypeStartDelete,
+  documentTypeStartList,
+} from '../../actions/documentTypeActions';
 import { DataTable } from '../ui/DataTable';
-import { ProvinceModal } from './ProvinceModal';
+import { DocumentTypeModal } from './DocumentTypeModal';
 import Swal from 'sweetalert2';
 
-export const ProvincesScreen = () => {
-  const { list, loading } = useSelector((state) => state.province);
+export const DocumentTypesScreen = () => {
+  const { list, loading } = useSelector((state) => state.documentType);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(provinceStartList());
+    dispatch(documentTypeStartList());
   }, [dispatch]);
 
   const handleAddNew = (e) => {
@@ -37,8 +37,8 @@ export const ProvincesScreen = () => {
 
   const handleDelete = (data) => {
     Swal.fire({
-      title: 'Eliminar Provincia',
-      html: `Está seguro de eliminar la provincia ${data.name}?`,
+      title: 'Eliminar Tipo de documento',
+      html: `Está seguro de eliminar el tipo de documento ${data.name}?`,
       showDenyButton: true,
       confirmButtonText: 'Sí',
       denyButtonText: 'No',
@@ -48,7 +48,7 @@ export const ProvincesScreen = () => {
       },
     }).then((result) => {
       if (result.isConfirmed) {
-        dispatch(provinceStartDelete(data.id));
+        dispatch(documentTypeStartDelete(data.id));
       }
     });
   };
@@ -56,7 +56,7 @@ export const ProvincesScreen = () => {
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 className="h2">Provincias</h1>
+        <h1 className="h2">Tipos de documento</h1>
       </div>
       <div className="text-end">
         <button
@@ -64,7 +64,7 @@ export const ProvincesScreen = () => {
           className="btn btn-primary"
           onClick={handleAddNew}
         >
-          Nueva Provincia
+          Nuevo Tipo de documento
         </button>
       </div>
       <DataTable
@@ -74,7 +74,7 @@ export const ProvincesScreen = () => {
         handleModify={handleModify}
         handleDelete={handleDelete}
       />
-      <ProvinceModal />
+      <DocumentTypeModal />
     </>
   );
 };

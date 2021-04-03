@@ -14,4 +14,10 @@ export const types = {
   provinceAddNew: '[province] Add new',
   provinceModify: '[province] Modify',
   provinceDelete: '[province] Delete',
+
+  documentTypeStartList: '[documentType] Start list all',
+  documentTypeListAll: '[documentType] List all',
+  documentTypeAddNew: '[documentType] Add new',
+  documentTypeModify: '[documentType] Modify',
+  documentTypeDelete: '[documentType] Delete',
 };

@@ -3,8 +3,8 @@ export const translateHeaderToSpanish = (text) => {
     case 'name':
       return 'Nombre';
 
-    case 'seat':
-      return 'Asiento';
+    case 'shortName':
+      return 'Nombre corto';
 
     default:
       return text;
