@@ -1,13 +1,14 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
+import { Navbar } from '../components/ui/Navbar';
+import { Sidebar } from '../components/ui/Sidebar';
 import { BusStationsScreen } from '../components/busStations/BusStationsScreen';
 import { CitiesScreen } from '../components/cities/CitiesScreen';
 import { DocumentTypesScreen } from '../components/documentTypes/DocumentTypesScreen';
 import { HomeScreen } from '../components/home/HomeScreen';
 import { ProvincesScreen } from '../components/provinces/ProvincesScreen';
 import { TransportCompaniesScreen } from '../components/transportCompanies/TransportCompaniesScreen';
-import { Navbar } from '../components/ui/Navbar';
-import { Sidebar } from '../components/ui/Sidebar';
+import { VehicleTypesScreen } from '../components/vehicleTypes/VehicleTypesScreen';
 
 export const GetBusRoutes = () => {
   return (
@@ -30,6 +31,11 @@ export const GetBusRoutes = () => {
                 exact
                 path="/empresas"
                 component={TransportCompaniesScreen}
+              />
+              <Route
+                exact
+                path="/tipos-vehiculo"
+                component={VehicleTypesScreen}
               />
               <Route path="/" component={HomeScreen} />
             </Switch>

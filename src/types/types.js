@@ -38,4 +38,10 @@ export const types = {
   transportCompanyAddNew: '[transportCompany] Add new',
   transportCompanyModify: '[transportCompany] Modify',
   transportCompanyDelete: '[transportCompany] Delete',
+
+  vehicleTypeStartList: '[vehicleType] Start list all',
+  vehicleTypeListAll: '[vehicleType] List all',
+  vehicleTypeAddNew: '[vehicleType] Add new',
+  vehicleTypeModify: '[vehicleType] Modify',
+  vehicleTypeDelete: '[vehicleType] Delete',
 };
