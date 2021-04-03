@@ -5,6 +5,7 @@ import { provinceReducer } from './provinceReducer';
 import { documentTypeReducer } from './documentTypes';
 import { cityReducer } from './cityReducer';
 import { busStationReducer } from './busStationReducer';
+import { transportCompanyReducer } from './transportCompanyReducer';
 
 export const rootReducer = combineReducers({
   ui: uiReducer,
@@ -13,4 +14,5 @@ export const rootReducer = combineReducers({
   documentType: documentTypeReducer,
   city: cityReducer,
   busStation: busStationReducer,
+  transportCompany: transportCompanyReducer,
 });

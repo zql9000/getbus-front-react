@@ -5,6 +5,7 @@ import { CitiesScreen } from '../components/cities/CitiesScreen';
 import { DocumentTypesScreen } from '../components/documentTypes/DocumentTypesScreen';
 import { HomeScreen } from '../components/home/HomeScreen';
 import { ProvincesScreen } from '../components/provinces/ProvincesScreen';
+import { TransportCompaniesScreen } from '../components/transportCompanies/TransportCompaniesScreen';
 import { Navbar } from '../components/ui/Navbar';
 import { Sidebar } from '../components/ui/Sidebar';
 
@@ -25,6 +26,11 @@ export const GetBusRoutes = () => {
               />
               <Route exact path="/ciudades" component={CitiesScreen} />
               <Route exact path="/terminales" component={BusStationsScreen} />
+              <Route
+                exact
+                path="/empresas"
+                component={TransportCompaniesScreen}
+              />
               <Route path="/" component={HomeScreen} />
             </Switch>
           </main>

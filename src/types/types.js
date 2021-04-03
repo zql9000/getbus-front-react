@@ -32,4 +32,10 @@ export const types = {
   busStationAddNew: '[busStation] Add new',
   busStationModify: '[busStation] Modify',
   busStationDelete: '[busStation] Delete',
+
+  transportCompanyStartList: '[transportCompany] Start list all',
+  transportCompanyListAll: '[transportCompany] List all',
+  transportCompanyAddNew: '[transportCompany] Add new',
+  transportCompanyModify: '[transportCompany] Modify',
+  transportCompanyDelete: '[transportCompany] Delete',
 };
