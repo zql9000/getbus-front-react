@@ -44,4 +44,10 @@ export const types = {
   vehicleTypeAddNew: '[vehicleType] Add new',
   vehicleTypeModify: '[vehicleType] Modify',
   vehicleTypeDelete: '[vehicleType] Delete',
+
+  seatTypeStartList: '[seatType] Start list all',
+  seatTypeListAll: '[seatType] List all',
+  seatTypeAddNew: '[seatType] Add new',
+  seatTypeModify: '[seatType] Modify',
+  seatTypeDelete: '[seatType] Delete',
 };

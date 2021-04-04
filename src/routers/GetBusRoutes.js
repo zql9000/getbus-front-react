@@ -9,6 +9,7 @@ import { HomeScreen } from '../components/home/HomeScreen';
 import { ProvincesScreen } from '../components/provinces/ProvincesScreen';
 import { TransportCompaniesScreen } from '../components/transportCompanies/TransportCompaniesScreen';
 import { VehicleTypesScreen } from '../components/vehicleTypes/VehicleTypesScreen';
+import { SeatTypesScreen } from '../components/seatTypes/SeatTypesScreen';
 
 export const GetBusRoutes = () => {
   return (
@@ -37,6 +38,7 @@ export const GetBusRoutes = () => {
                 path="/tipos-vehiculo"
                 component={VehicleTypesScreen}
               />
+              <Route exact path="/tipos-asiento" component={SeatTypesScreen} />
               <Route path="/" component={HomeScreen} />
             </Switch>
           </main>
