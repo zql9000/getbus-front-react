@@ -63,7 +63,7 @@ export const DataTable = ({
                 {handleDelete && (
                   <i
                     className="fas fa-trash-alt text-danger pointer"
-                    onClick={() => item}
+                    onClick={() => handleDelete(item)}
                   ></i>
                 )}
               </td>

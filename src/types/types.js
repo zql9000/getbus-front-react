@@ -53,4 +53,10 @@ export const types = {
 
   permissionStartList: '[permission] Start list all',
   permissionListAll: '[permission] List all',
+
+  roleStartList: '[role] Start list all',
+  roleListAll: '[role] List all',
+  roleAddNew: '[role] Add new',
+  roleModify: '[role] Modify',
+  roleDelete: '[role] Delete',
 };

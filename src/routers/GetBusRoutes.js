@@ -11,6 +11,7 @@ import { TransportCompaniesScreen } from '../components/transportCompanies/Trans
 import { VehicleTypesScreen } from '../components/vehicleTypes/VehicleTypesScreen';
 import { SeatTypesScreen } from '../components/seatTypes/SeatTypesScreen';
 import { PermissionsScreen } from '../components/permissions/PermissionScreen';
+import { RolesScreen } from '../components/roles/RolesScreen';
 
 export const GetBusRoutes = () => {
   return (
@@ -41,6 +42,7 @@ export const GetBusRoutes = () => {
               />
               <Route exact path="/tipos-asiento" component={SeatTypesScreen} />
               <Route exact path="/permisos" component={PermissionsScreen} />
+              <Route exact path="/roles" component={RolesScreen} />
               <Route path="/" component={HomeScreen} />
             </Switch>
           </main>

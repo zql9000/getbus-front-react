@@ -9,6 +9,7 @@ import { transportCompanyReducer } from './transportCompanyReducer';
 import { vehicleTypeReducer } from './vehicleTypeReducer';
 import { seatTypeReducer } from './seatTypeReducer';
 import { permissionReducer } from './permissionReducer';
+import { roleReducer } from './roleReducer';
 
 export const rootReducer = combineReducers({
   ui: uiReducer,
@@ -21,4 +22,5 @@ export const rootReducer = combineReducers({
   vehicleType: vehicleTypeReducer,
   seatType: seatTypeReducer,
   permission: permissionReducer,
+  role: roleReducer,
 });
