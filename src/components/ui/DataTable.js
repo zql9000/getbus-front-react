@@ -35,7 +35,7 @@ export const DataTable = ({
               <th key={index}>{translateHeaderToSpanish(name)}</th>
             ) : null
           )}
-          <th>Acciones</th>
+          {(handleView || handleModify || handleDelete) && <th>Acciones</th>}
         </tr>
       </thead>
       <tbody>
@@ -46,20 +46,28 @@ export const DataTable = ({
                 <td key={item.id + index}>{item[name]}</td>
               ) : null
             )}
-            <td>
-              <i
-                className="fas fa-eye me-3 text-primary pointer"
-                onClick={() => handleView(item)}
-              ></i>
-              <i
-                className="fas fa-pencil-alt me-3 text-primary pointer"
-                onClick={() => handleModify(item)}
-              ></i>
-              <i
-                className="fas fa-trash-alt text-danger pointer"
-                onClick={() => handleDelete(item)}
-              ></i>
-            </td>
+            {(handleView || handleModify || handleDelete) && (
+              <td>
+                {handleView && (
+                  <i
+                    className="fas fa-eye me-3 text-primary pointer"
+                    onClick={() => handleView(item)}
+                  ></i>
+                )}
+                {handleModify && (
+                  <i
+                    className="fas fa-pencil-alt me-3 text-primary pointer"
+                    onClick={() => handleModify(item)}
+                  ></i>
+                )}
+                {handleDelete && (
+                  <i
+                    className="fas fa-trash-alt text-danger pointer"
+                    onClick={() => item}
+                  ></i>
+                )}
+              </td>
+            )}
           </tr>
         ))}
       </tbody>

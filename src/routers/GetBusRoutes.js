@@ -10,6 +10,7 @@ import { ProvincesScreen } from '../components/provinces/ProvincesScreen';
 import { TransportCompaniesScreen } from '../components/transportCompanies/TransportCompaniesScreen';
 import { VehicleTypesScreen } from '../components/vehicleTypes/VehicleTypesScreen';
 import { SeatTypesScreen } from '../components/seatTypes/SeatTypesScreen';
+import { PermissionsScreen } from '../components/permissions/PermissionScreen';
 
 export const GetBusRoutes = () => {
   return (
@@ -39,6 +40,7 @@ export const GetBusRoutes = () => {
                 component={VehicleTypesScreen}
               />
               <Route exact path="/tipos-asiento" component={SeatTypesScreen} />
+              <Route exact path="/permisos" component={PermissionsScreen} />
               <Route path="/" component={HomeScreen} />
             </Switch>
           </main>

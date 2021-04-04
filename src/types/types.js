@@ -50,4 +50,7 @@ export const types = {
   seatTypeAddNew: '[seatType] Add new',
   seatTypeModify: '[seatType] Modify',
   seatTypeDelete: '[seatType] Delete',
+
+  permissionStartList: '[permission] Start list all',
+  permissionListAll: '[permission] List all',
 };
