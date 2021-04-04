@@ -61,6 +61,8 @@ export const CityModal = () => {
       handleCloseModal();
     }
 
+    setNameValid(true);
+    setProvinceIdValid(true);
     let error = false;
     if (name.trim().length < 2) {
       setNameValid(false);
@@ -73,8 +75,6 @@ export const CityModal = () => {
     if (error) {
       return;
     }
-    setNameValid(true);
-    setProvinceIdValid(true);
 
     if (modalType === modalTypes.new) {
       dispatch(cityStartAddNew(formValues));

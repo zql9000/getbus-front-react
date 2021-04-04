@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { uiReducer } from './uiReducer';
 import { authReducer } from './authReducer';
 import { provinceReducer } from './provinceReducer';
-import { documentTypeReducer } from './documentTypes';
+import { documentTypeReducer } from './documentTypesReducer';
 import { cityReducer } from './cityReducer';
 import { busStationReducer } from './busStationReducer';
 import { transportCompanyReducer } from './transportCompanyReducer';
@@ -10,6 +10,7 @@ import { vehicleTypeReducer } from './vehicleTypeReducer';
 import { seatTypeReducer } from './seatTypeReducer';
 import { permissionReducer } from './permissionReducer';
 import { roleReducer } from './roleReducer';
+import { userReducer } from './userReducer';
 
 export const rootReducer = combineReducers({
   ui: uiReducer,
@@ -23,4 +24,5 @@ export const rootReducer = combineReducers({
   seatType: seatTypeReducer,
   permission: permissionReducer,
   role: roleReducer,
+  user: userReducer,
 });

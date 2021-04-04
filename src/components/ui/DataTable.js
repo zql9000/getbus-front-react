@@ -31,7 +31,7 @@ export const DataTable = ({
       <thead>
         <tr>
           {Object.keys(list[0]).map((name, index) =>
-            name !== 'id' && !name.endsWith('Id') ? (
+            name !== 'id' && !name.endsWith('Id') && name !== 'password' ? (
               <th key={index}>{translateHeaderToSpanish(name)}</th>
             ) : null
           )}
@@ -42,7 +42,7 @@ export const DataTable = ({
         {list.map((item) => (
           <tr key={item.id}>
             {Object.keys(item).map((name, index) =>
-              name !== 'id' && !name.endsWith('Id') ? (
+              name !== 'id' && !name.endsWith('Id') && name !== 'password' ? (
                 <td key={item.id + index}>{item[name]}</td>
               ) : null
             )}

@@ -59,4 +59,10 @@ export const types = {
   roleAddNew: '[role] Add new',
   roleModify: '[role] Modify',
   roleDelete: '[role] Delete',
+
+  userStartList: '[user] Start list all',
+  userListAll: '[user] List all',
+  userAddNew: '[user] Add new',
+  userModify: '[user] Modify',
+  userDelete: '[user] Delete',
 };
